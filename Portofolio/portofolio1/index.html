@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="deskop-nav">
+        <div class="logo">Vernon Engelbrecht</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="title-nav">
+        <div class="logo">Vernon</div>
+        <div class="title-menu">
+            <div class="title-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()" >Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic">
+            <img src="WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" alt="Vernon Engelbrecht">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="name">Vernon Engelbrecht</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn_container">
+                <button class="btn btn-color-2" onclick="window.open('Vernon_Engelbrecht_CV_3.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./images.png" alt="LinkedIn profile" 
+                class="icon" onclick="location.href='https://LinkedIn.com/'"/>
+                <img src="/GitHub-Mark-ea2971cee799.png" alt="My Github profile" class="icon"
+                onclick="location.href='https://github.com/'">
+            </div>
+        </div> 
+       </section>
+       <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+        <div class="section_pic">
+            <img
+            src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg"
+            alt="profile picture"
+            class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                <img src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" alt="experience icon"
+                class="icon">
+                <h3>Experience</h3>
+                <p>Intern <br>Frontend Development</p>
+            </div>
+            <div class="details-container">
+                <img
+                src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg"
+                alt="Education icon"
+                class="icon">
+                <h3>Education</h3>
+                <p>B.Sc. Bachelor Degree<br>M.SC. Masters degree</p>
+            </div>
+        </div>
+        <div class="text-container">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        </div>
+        </div>
+        <img src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'">
+        
+       </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Frontend Developer</h2>
+                  <div class="article-container">
+                    <article>
+                        <img 
+                        src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>                   
+                    </article>
+                    <article>
+                        <img 
+                        src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>                   
+                    </article>
+                    <article>
+                        <img 
+                        src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>                   
+                    </article>
+                    <article>
+                        <img 
+                        src="./WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>                   
+                    </article>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse my Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./verified_FILL0_wght400_GRAD0_opsz24.png" alt="Project 1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn_container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn_container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+
+                </div>
+            </div>
+            <div class="details-containers color-container"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
