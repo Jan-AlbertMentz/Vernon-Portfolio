@@ -1,154 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./Styles/style.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Vernon Engelbrecht</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - Vernon Engelbregt</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <script src="./JS/menu.js"></script>
+    <!-- JavaScript to handle the menu toggle -->
+  </head>
+  <body>
+    <!-- Navigation bar at the top -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <!-- Name and job title on the left -->
+        <div class="navbar-left">
+          <span class="navbar-name">Vernon Engelbregt</span>
+          <span class="navbar-job">Software Engineer</span>
+        </div>
+        <!-- Hamburger menu and Navigation links -->
+        <div class="navbar-right">
+          <!-- Hamburger menu for phone view -->
+          <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+          <!-- Hamburger icon -->
+          <!-- Navigation links -->
+          <ul class="navbar-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills-education">Skills & Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Vernon Engelbrecht</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./Pictures/WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" alt="John Doe profile picture">
+    <!-- Main content container -->
+    <div class="main-content">
+      <!-- About Me section -->
+      <header id="about-me">
+        <div class="about-me-content">
+          <img
+            src="./Pictures/Profile Picture.jpeg"
+            alt="Vernon Engelbregt"
+            class="profile-image"
+          />
+          <div class="main-aboutme-text">
+            <h1>Portfolio of Vernon Engelbregt</h1>
+            <p>
+              Welcome to my portfolio. I am a Software Engineer with a passion
+              for [Your Interests]. I enjoy working on innovative projects and
+              always look forward to learning new skills.
+            </p>
+            <div class="button-container">
+              <button class="about-buttons buttons-heights" href="enter/CV/here">CV</button>
+              <button class="about-buttons-img buttons-heights"><img class="about-img" src="Pictures/Linkin Icon.png" onclick="openLinkin()"></img></button>
+              <button class="about-buttons-img buttons-heights"><img class="about-img" src="Pictures/GitHub Icon.png" onclick="openGitHub()"></img></button>
+            </div>
+          </div>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Vernon Engelbrecht</h1>
-            <p class="section__text__p2">Software Engineer student</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./Vernon_Engelbrecht_CV_3.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./Pictures/images.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'">
-                <img src="./Pictures/GitHub-Mark-ea2971cee799.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/'">
-            </div>
+      </header>
+
+      <!-- Skills & Education section -->
+      <section id="skills-education" class="skills-education">
+        <div class="skills">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <li>
+              <img class="skill-icon" src="./Pictures/C-Icon.png" alt="C#" /> C#
+            </li>
+            <li>
+              <img class="skill-icon" src="./Pictures/CSS.png" alt="CSS" /> CSS
+            </li>
+            <li>
+              <img class="skill-icon" src="./Pictures/HTML.png" alt="HTML" />
+              HTML
+            </li>
+            <li>
+              <img
+                class="skill-icon"
+                src="./Pictures/Javascript.png"
+                alt="JavaScript"
+              />
+              JavaScript
+            </li>
+            <li>
+              <img class="skill-icon" src="./Pictures/SQL.png" alt="SQL" /> SQL
+            </li>
+          </div>
         </div>
-    </section>
 
-    <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="./Pictures/WhatsApp Image 2024-02-29 at 9.36.57 PM.jpeg" alt="Profile picture">
-            </div>
-            <div class="about-details">
-                <p>Hey there! I'm Vernon Engelbrecht, a third-year software engineering student at Belgium Campus...</p>
-            </div>
+        <div class="education">
+          <h2>Education</h2>
+          <div class="education-div">
+            <img
+              src="./Pictures/BelguimCampus.png"
+              alt="Education"
+              class="education-image"
+            />
+            <p>
+              I graduated from [Your School/University] with a degree in [Your
+              Degree]. I have a passion for learning and continuously expanding
+              my knowledge in technology and software development.
+            </p>
+            <img
+              src="./Pictures/PNHS.png"
+              alt="Education"
+              class="education-image"
+            />
+            <p>
+              I graduated from [Your School/University] with a degree in [Your
+              Degree]. I have a passion for learning and continuously expanding
+              my knowledge in technology and software development.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="experience">
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="experience-column">
-                <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./Pictures/verified_FILL0_wght400_GRAD0_opsz24.png" alt="HTML icon" class="icon">
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./Pictures/verified_FILL0_wght400_GRAD0_opsz24.png" alt="CSS icon" class="icon">
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <!-- More articles -->
-                </div>
-            </div>
-            <div class="experience-column">
-                <h2 class="experience-sub-title">Backend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./Pictures/verified_FILL0_wght400_GRAD0_opsz24.png" alt="Node.js icon" class="icon">
-                        <div>
-                            <h3>Node.js</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <!-- More articles -->
-                </div>
-            </div>
+      <!-- Projects section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+          <a href="project1.html" class="project-card">
+            <img
+              src="./Pictures/Bugtracker.jpg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <h3>Bugtracker</h3>
+            <p>A brief description of Project 1.</p>
+          </a>
+
+          <a href="project2.html" class="project-card">
+            <img
+              src="./Pictures/Students&Modules.png"
+              alt="Project 2"
+              class="project-image"
+            />
+            <h3>Students & Modules</h3>
+            <p>A brief description of Project 2.</p>
+          </a>
+
+          <a href="project3.html" class="project-card">
+            <img
+              src="./Pictures/Loans&IntrestRate.png"
+              alt="Project 3"
+              class="project-image"
+            />
+            <h3>Loans & Intrest Rate</h3>
+            <p>A brief description of Project 3.</p>
+          </a>
         </div>
-    </section>
+      </section>
 
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="project-details-container">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./Pictures/Screenshot 2024-05-09 112318.jpg" alt="Bug Tracker">
-                </div>
-                <h2>Bug Tracker</h2>
-                <div class="project-buttons">
-                    <button class="project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                    <button class="project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/project-2.png" alt="Project Two">
-                </div>
-                <h2>Project Two</h2>
-                <div class="project-buttons">
-                    <button class="project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                    <button class="project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                </div>
-            </div>
-            <!-- More project cards -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-container">
-            <div class="contact-card">
-                <img src="./Pictures/email.png" alt="Email icon">
-                <p><a href="mailto:Vernonengelbrecht123@gmail.com">Vernonengelbrecht123@gmail.com</a></p>
-            </div>
-            <div class="contact-card">
-                <img src="./Pictures/images.png" alt="LinkedIn icon">
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright © 2023 Vernon Engelbrecht. All Rights Reserved.</p>
-    </footer>
-
-    <script src="./script.js"></script>
-</body>
+      <!-- Contact section -->
+      <section id="contact" class="contact-info">
+        <h2>Contact</h2>
+        <p><strong>Name:</strong> Vernon Engelbregt</p>
+        <p><strong>Phone:</strong> +27 79 886 9397</p>
+        <p>
+          <strong>Email:</strong>
+          <a class="email-ancor" href="mailto:vernonengelbrecht123@gmail.com"
+            >vernonengelbrecht123@gmail.com</a
+          >
+        </p>
+        <!-- Button to open mail client with pre-filled email address -->
+        <a href="vernonengelbrecht123@gmail.com" class="contact-button"
+          >Email Me</a
+        >
+      </section>
+    </div>
+  </body>
 </html>
