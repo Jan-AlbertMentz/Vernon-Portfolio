@@ -321,9 +321,13 @@ h2 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) { /* Responsive breakpoint for smaller screens */
+@media (max-width: 980px) { /* Responsive breakpoint for smaller screens */
   .skills-education {
     flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  body{
+    overflow-y: auto;
+    font-size: 2em;
   }
 
   .projects-list {
